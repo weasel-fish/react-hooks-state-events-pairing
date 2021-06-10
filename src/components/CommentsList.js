@@ -1,3 +1,5 @@
+import Comment from './Comment'
+
 function CommentsList({comments}) {
     return (
         <div>

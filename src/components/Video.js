@@ -1,6 +1,8 @@
-import CommentsList from "./CommentsList"
+import { useState } from "react";
+
 
 function Video({videoObj}) {
+  
     return(
         <div>
             <iframe
@@ -13,10 +15,7 @@ function Video({videoObj}) {
             />
             <h1>{videoObj.title}</h1>
             <small>{videoObj.views} views | Uploaded {videoObj.createdAt}</small><br />
-            <button>{videoObj.upvotes} 👍</button>
-            <button>{videoObj.downvotes} 👎</button> <br />
-            <button>Comments</button>
-            <CommentsList comments={videoObj.comments} />
+            
         </div>
     )
 }
